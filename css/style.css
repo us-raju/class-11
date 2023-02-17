@@ -1,0 +1,212 @@
+/* common css start  */
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 1170px;
+    margin: auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+a{
+    text-decoration: none;
+}
+ol,ul{
+    list-style-type: none;
+}
+:root{
+    --primary-color: #0f2f44;
+    --secondary-color: #ffd462;
+    --third-color:#8484bf;
+    --primary-font:'Ubuntu', sans-serif;
+    --secondary-font:'Open Sans', sans-serif;
+   --third-font:'Abril Fatface', cursive;
+
+}
+body{
+    font-family:'Ubuntu', sans-serif; ;
+}
+
+/* common css end  */
+
+/* header section css start  */
+    header{
+        background-color: var(--primary-color);
+    }
+    header .row{
+        justify-content: space-between;
+        color: #ffffff;
+        padding: 19px 0;
+        font-size: 16px;
+        font-family: var(--primary-font);
+    }
+/* header section css end  */
+
+/* navigation section css start  */
+    #navigation div.row{
+       justify-content: space-between;
+       align-items: center;
+    }
+    #navigation ul li a{
+        font-family: var(--primary-font);
+        font-size:16px ;
+        font-weight: 500;
+        padding: 30px 20px;
+        margin: 10px 0;
+        border-radius: 10px;
+        display: block;
+        color: #222222;
+        transition: .7s;
+        }
+    #navigation ul li:hover >a{
+        background-color: #fff9e6;
+        color: var(--secondary-color);
+    }
+    #navigation ul li{
+     
+        position: relative;
+    }
+    #navigation ul li ul{
+        position: absolute;
+        left: 0;
+        top: 100%;
+        opacity: 0;
+        visibility: hidden;
+    
+    }
+    #navigation ul li:hover > ul {
+        opacity: 1;
+        visibility: visible;
+        background-color: var(--third-color);
+    }
+    #navigation ul li ul li a{
+        padding: 10px 15px;
+    }
+    #navigation ul li span{
+       
+       align-items: center;
+
+    }
+/* navigation section css end  */
+
+/* banner section css start  */
+    #banner{
+        height: 601px;
+        background-image: url(../images/Bizzency_bg.jpg);
+        background-position: center;
+        background-size: cover;
+        
+        
+
+    }
+    #banner h2{
+        font-size: 50px;
+        font-weight: 300;
+        color: var(--primary-color);
+        padding-top: 70px;
+    }
+    #banner h1{
+        font-size: 80px;
+        font-family: var(--third-font);
+        color: var(--primary-color);
+    }
+    #banner h3{
+        font-size: 32px;
+        font-weight: 400;
+        letter-spacing: 19px;
+        color: #8484bf;
+        margin-bottom: 34px;
+    }
+    #banner p{
+        color:#444444 ;
+        width: 470px;
+        font-size: 14px;
+        font-family: var(--secondary-font);
+        margin-bottom: 30px   
+    }
+    #banner strong a{
+        font-size: 20px;
+        font-weight: 500;
+        padding: 16px 20px;
+        background-color: #8484bf;
+        color: #ffffff;
+        border-radius: 7px;
+        transition: .7s;
+    }
+    #banner strong:hover a{
+        background-color: var(--primary-color);
+    }
+/* banner section css end  */
+
+/* about section css start  */
+    #about{
+
+        color: var(--primary-color);
+    }
+    #about div.row{
+       /* display: inline-block; */
+    }
+    #about .container p{
+        width: 570px;
+        font-size: 16px;
+        font-family: var(--secondary-font);
+    }
+    #about h5{
+        font-size: 14px;
+       font-weight: 300;
+       padding-top: 100px;
+    }
+    #about h2{
+        font-size: 32px;
+        font-family: var(--third-font);
+        margin-bottom: 32px;
+    }
+    #about img{
+        padding-top: 100px;
+    }
+    #about p{
+       margin-bottom: 34px;
+    }
+    #about p:nth-child(2n){
+       padding-left: 30px;
+       width: 504px;
+       line-height: 33px;
+    }
+    #about .about_info a{
+       font-size: 20px;
+       font-weight: 500;
+       color: var(--primary-color);
+    
+    }
+    #about .about_info .km a{
+        margin-right: 26px;
+        background-color: #ffc712;
+        padding: 16px 20px;
+        transition: .5s;
+        border-radius: 5px;
+        text-transform: capitalize;
+      
+    }
+    #about .about_info .km:hover a{
+        background-color: var(--primary-color);
+        color: black;
+    }
+    #about .about_info .rl a{
+        padding: 16px 20px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        background-color:#fff;
+        transition: .5s;
+      
+    }
+    #about .about_info .rl:hover a{
+        background-color: var(--primary-color);
+        color: black;
+    }
+  
+/* about section css end  */
